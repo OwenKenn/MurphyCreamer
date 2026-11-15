@@ -2,17 +2,95 @@
 	Desktop website style
 **/
 body {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
-	grid-template-rows: auto 3fr 1fr;
 	padding: 0;
 	margin: 0;
 }
-header {}
-main { }
-footer{
+
+header {
+	/*Temp border*/
+	border: 1px black solid;
+	text-align: center;
+}
+
+main { 
+	display: grid;
+	grid-template-areas:
+			"edu"
+			"pro"
+			"ref"
+			"con"
+			"gen"
+	;
+}
+
+#edu {
+	/*Temp border*/
+	border: 1px black solid;
+	grid-area: edu;
+}
+	#indivEdu {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-areas: 
+				"edu1	edu2"
+		;
+	}
+		#edu1 {
+			/*Temp border*/
+			border: 1px black solid;
+		}
+		
+		#edu2 {
+			/*Temp border*/
+			border: 1px black solid;
+		}
+
+#pro {
+	/*Temp border*/
+	border: 1px black solid;
+	grid-area: pro;
+}
+	#indivPro {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-areas:
+				"pro1	pro2"
+		;
+	}
+	#pro1 {
+		grid-area: pro1;
+		/*Temp border*/
+		border: 1px black solid;
+	}
+	#pro2 {
+		grid-area: pro2;
+		/*Temp border*/
+		border: 1px black solid;
+	}
+
+#ref {
+	/*Temp border*/
+	border: 1px black solid;
+	grid-area: ref;
+}
+
+#con {
+	/*Temp border*/
+	border: 1px black solid;
+	grid-area: con;
+}
+
+#gen {
+	grid-area: gen;
+}
+
+footer {
 	background-color: black;
 	color: white;
+	flex: 1;
 }
 
 ul {
@@ -20,33 +98,34 @@ ul {
 	padding: 0;
 	margin: 0;
 }
-	li {
-		margin-bottom: 3px;
-	}
+
+li {
+	margin-bottom: 3px;
+}
+
 h3 {
 	text-align: center;
-	padding-right: 10%;
 }
 
 /**
 	Tablet website style
 **/
 @media (max-width: 767px) {
-	header {
-	
+	#indivEdu,
+	#indivPro {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"edu1"
+			"edu2";
 	}
-	main {
-		
-	}
-	footer{
-		
+	#indivPro {
+		grid-template-areas:
+			"pro1"
+			"pro2";
 	}
 }
+
 /**
 	Mobile website style
-	*if nessasary
+	*if necessary
 **/
-
-
-
-
