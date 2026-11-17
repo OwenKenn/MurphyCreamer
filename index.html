@@ -1,73 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Murphy Creamer</title>
-		<!--
-		This should work to replace the defualt globe image
-		<link rel="icon" href="//pathtofile" type="image/png">
-		-->
-		<link rel='stylesheet' href='indexCSS.css'>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Murphy Creamer | Portfolio</title>
+		<!--Put thing here to get rid of globe defualt image-->
+		<link rel="stylesheet" href="indexCSS.css">
 	</head>
 
 	<body>
 		<header>
 			<h1>Murphy Creamer</h1>
-			<ul>
-				<li><a href='mailto:murphy.creamer@lethpolytech.ca'>murphy.creamer@lethpolytech.ca</a></li>
-				<li><a href='tel:+14035930868'>403 593-0868</a></li>
-				<li><a href='\documents\Resume.pdf'>Resume</a></li>
+			<p>Computer Information Technology student</p>
+			<ul class="links">
+				<li><a href="mailto:murphy.creamer@lethpolytech.ca">murphy.creamer@lethpolytech.ca</a></li>
+				<li><a href="tel:+14035930868">403 593-0868</a></li>
+				<li><a href="documents/Resume.pdf">Resume</a></li>
 			</ul>
 		</header>
+
 		<main>
-			<div id='edu'>
-			<h3>Education:</h3>
-				<div id='indivEdu'>
-					<div id='edu1'>
-							<p class='eduTitle'>Lethbridge Polytechnic:</p>
-							<p class='eduCont'>Computer Information and Technology</p>
-							<p class='eduDate'>2025-Present</p>
+			<section id="about">
+				<h2>Mission Statement</h2>
+				<p>
+					I wish to translate complex IT capabilities into actionable business value, ensuring technology serves as a catalyst for real-world organizational success while 
+					retaining morality.
+				</p>
+			</section>
+
+			<section id="education">
+				<h2>Education</h2>
+				<div class="item">
+					<h3>Computer Information Technology</h3>
+					<!--span-->
+					<p>Lethbridge Polytechnic, 2025 to present</p></span>
+				</div>
+			</section>
+
+			<section id="projects">
+				<h2>Projects</h2>
+				<div class="cards">
+					<div class="card">
+						<h3>EMAP-OS</h3>
+						<p>Capstone project for The Engravers. I'm the database designer.</p>
 					</div>
-					<div id='edu2'>
-							<p>Other</p>
+					<div class="card">
+						<h3>Library Database</h3>
+						<p>A small Database made in acsess for a fictonal libary. </p>
+					</div>
+					<div class="card">
+						<h3>Add a project</h3>
+						<p>Copy one of these blocks to add more.</p>
 					</div>
 				</div>
-			</div>
-			
-			<div id='pro'>
-				<h3>Projects:</h3>
-				<div id='indivPro'>
-					<div id='pro1'>
-						<p>EMAP-OS</p>
-					</div>
-					<div id='pro2'>
-						<p>3-Player Connect four</p>
-					</div>
-				</div>
-			</div>
-			
-			<div id='ref'>
-				<div id='indivRef'>
-					<h3>References:</h3>
-						<p>Tim</p>
-				</div>
-			</div>
-			
-			<div id='con'>
-				<h3>Contact:</h3>
-					<ul>
-						<li><a href='mailto:murphy.creamer@lethpolytech.ca'>murphy.creamer@lethpolytech.ca</a></li>
-						<li><a href='tel:+14035930868'>403 593-0868</a></li>
-						<li><a href='\documents\Resume.pdf'>Resume</a></li>
-					</ul>
-			</div>
+			</section>
+
+			<section id="skills">
+				<h2>Skills</h2>
+				<ul class="tags">
+				<!--Add the images here for each of these skills-->
+					<li>SQL</li>
+					<li>ERD design</li>
+					<li>Python</li>
+					<li>C#</li>
+					<li>Java</li>
+					<li>HTML</li>
+					<li>CSS</li>
+				</ul>
+			</section>
 		</main>
-		
+
 		<footer>
-			<div id='gen'>
-				<h3>General Skills and Social Media:</h3>
-			</div>
+			<p>Contact: <a href="mailto:murphy.creamer@lethpolytech.ca">murphy.creamer@lethpolytech.ca</a></p>
 		</footer>
 	</body>
-
 </html>
