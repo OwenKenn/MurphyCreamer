@@ -106,3 +106,12 @@ footer {
 footer a {
 	color: var(--background);
 }
+
+button {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 100px;
+	display: none;
+	/*Make button look better here/in class*/
+}
