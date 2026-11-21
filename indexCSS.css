@@ -89,6 +89,18 @@ ul {
 	display: inline-block;
 	margin: 0 0.75rem;
 }
+	.links a:hover{ 
+		font-style: italic; 
+	}
+	.links a:visited { 
+		font-style: italic; 
+		font-weight: bold;
+	}
+	.links a:active { 
+		font-style: italic; 
+		font-weight: bold;
+	}
+
 
 main {
 	flex: 1;
@@ -143,7 +155,7 @@ main {
 		background: var(--light);
 		color: var(--accent);
 	}
-		.item button a {
+		.item a button{
 			text-decoration: none;
 			margin: 10px;
 			font-size: 16px;
@@ -151,7 +163,7 @@ main {
 		.item button:hover {
 			background-color: var(--accent);
 		}
-		.item button:hover a {
+		.item a:hover button {
 			color: var(--background);
 		}
 
@@ -179,7 +191,6 @@ footer {
 	right: 3%;
 	width: 100px;
 	display: none;
-	/*Make button look better here/in class*/
 	font-family: Georgia, serif;
 	font-weight: bold;
 	background: var(--light);
@@ -193,3 +204,50 @@ footer {
 		background-color: var(--accent);
 		color: var(--background);
 	}
+
+/**
+	3-player connect 4 CSS
+**/
+#game {
+	width: 100%;
+	max-width: 100%;
+	margin: 20px auto;
+}
+
+#players {
+	display: flex;
+}
+
+#players .player {
+	flex: 1;
+}
+
+.status {
+	border: 1px solid #999;
+	padding: 6px;
+	text-align: center;
+}
+
+.player select {
+	width: 100%;
+	padding: 6px;
+}
+
+#startButton {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 4px;
+}
+
+#board {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 1px;
+}
+
+.tile {
+	height: 45px;
+	background-color: white;
+	border: 1px solid #999;
+	cursor: pointer;
+}
