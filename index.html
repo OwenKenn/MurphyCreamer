@@ -19,13 +19,24 @@
 				<li><a href="documents/Resume.pdf">Resume</a></li>
 			</ul>
 		</header>
-
+		
+		<nav aria-label="Main">
+			<ul>
+				<li><a href="#mission">Mission</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		
 		<main>
-			<section id="about">
+			<section id="mission">
 				<h2>Mission Statement</h2>
 				<p>
-					I wish to translate complex IT capabilities into actionable business value, ensuring technology serves as a catalyst for real-world organizational success while 
-					retaining morality.
+					I wish to translate complex IT capabilities into actionable business value, ensuring technology serves as a 
+					catalyst for real-world organizational success while retaining morality.
 				</p>
 			</section>
 
@@ -34,6 +45,21 @@
 				<div class="item">
 					<h3>Computer Information Technology - Lethbridge Polytechnic</h3>
 					<p>Sept 2025 - Present</p>
+					<h4>Technical Skills learned:</h4>
+					<ul class="skillList">
+						<li>Relational Database Design</li>
+						<li>Computer Hardware</li>
+						<li>Computer Programming (C#, Java)</li>
+						<li>Basic Networking</li>
+					</ul>
+					<h4>Professional Skills learned:</h4>
+					<ul class="skillList">
+						<li>Communication</li>
+						<li>Presentation Skills</li>
+						<li>Team Leadership</li>
+						<li>Collaboration</li>
+						<li>Adaptability</li>
+					</ul>
 				</div>
 			</section>
 
@@ -41,20 +67,95 @@
 				<h2>Projects</h2>
 				<div class="item">
 					<h3>EMAP-OS (Engravers Management and Product Ordering System)</h3>
+					<h4>Project Description:</h4>
 					<p>I am the Database designer for EMAP-OS, a bulk order management system for a local business in lethbridge.</p>
 					<h4>Example Data Flow Diagram (DFD):</h4>
 					<img src="images/DFDExample.png" alt="An example Data Flow Diagram from the system">
 					<h4>Example Entity Relationship Diagram (ERD):</h4>
 					<img src="images/ERDExample.png" alt="An example Entity Relationship Diagram from the system">
 				</div>
+				
 				<div class="item">
 					<h3>Library Database</h3>
+					<h4>Project Description:</h4>
 					<p>A DBMS made in Microsoft Acsess for a fictonal libary.</p>
+					<h4>Entity Relationship Diagram:</h4>
+					<img src="images/libERD.png" alt="The Entity Relationship Diagram from the Lubary Database">
+					<h4>Report:</h4>
+					<img src="images/libReport.png" alt="A Report from the Libary Database">
+					<h4>Query:</h4>
+					<img src="images/libQuery.png" alt="A Query from the Libary Database">
+					<img src="images/libSQL.png" alt="The SQL code from the Query">
+					
+					<!--Add proper style to the button, make sure it links to a github you have made-->
+					<button><a href="https://github.com/OwenKenn/LibraryAccessDatabase" target="_blank" rel="noopener noreferrer">Github</a></button>
+				</div>
+				
+				<div class="item">
+					<h3>Business Management Case Study: City Furniture and Mattress</h3>
+					<h4>Project Description:</h4>
+					<p>
+						Led a team of 6 in analyzing a business case based on a real-world business, identifying
+						operational and strategic challenges, and providing recomendations for improvement.
+					</p>
+					<h4>Skills related to position:</h4>
+					<ul class="skillList">
+						<li>
+							Developed and recommended solutions, delegating research, writing tasks and coordinating
+							deadlines across the team
+						</li>
+						<li>
+							Authored and edited analytical reports supporting our analysis and recommendations with
+							research and business reasoning
+						</li>
+						<li>
+							Presented findings to stakeholders in a professionally made PowerPoint presentation
+						</li>
+						<li>
+							Finished the case study with a grade above 90%
+						</li>
+					</ul>
 				</div>
 			</section>
 			
-			<section id="Experience">
+			<section id="experience">
 				<h2>Experience</h2>
+				<div class="item">
+					<h3>Tutor - Lethbridge Polytechnic</h3>
+					<p>Oct 2026 - Present</p>
+					<h4>Job Description:</h4>
+					<p>Provide targeted, individualized instruction that complements formal education.</p>
+					<h4>Skills related to position:</h4>
+					<ul class="skillList">
+						<li>
+							Mentor students in CIT core subjects, explaining concepts 
+							clearly and adapting to student needs
+						</li>
+						<li>
+							Communicate and collaborate with students to build 
+							understanding and track progress
+						</li>
+					</ul>
+				</div>
+				
+				<div class="item">
+					<h3>Security Professional - Rhino Security, Lethrbridge</h3>
+					<p>Jul 2024 - Jun 2026</p>
+					<h4>Job Description:</h4>
+					<p>
+						Observe and act as threat deturence for businesses, dealing with hostile customers and civilians.
+					</p>
+					<h4>Skills related to position:</h4>
+					<ul class="skillList">
+						<li>
+							Observed business operations, getting an understanding of 
+							their business needs and requirements
+						</li>
+						<li>
+							Documented events in professional, accurate and timely written reports
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<section id="skills">
@@ -72,10 +173,14 @@
 			</section>
 		</main>
 
-		<footer>
-			<p>Contact: <a href="mailto:murphy.creamer@lethpolytech.ca">murphy.creamer@lethpolytech.ca</a></p>
+		<footer id="contact">
+			<h4 style="margin: 0;">Contact:</h4>
+			<ul class="links">
+				<li><a href="mailto:murphy.creamer@lethpolytech.ca">murphy.creamer@lethpolytech.ca</a></li>
+				<li><a href="tel:+14035930868">403 593-0868</a></li>
+			</ul>
 		</footer>
 		
-		<button id="topButton">Top!</button>
+		<button id="topButton" class="topButton"><h4>Top &uarr;</h4></button>
 	</body>
 </html>

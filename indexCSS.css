@@ -5,6 +5,13 @@
 	--light: #eef4f3;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+	scroll-padding-top: 4rem;
+  }
+}
+
 body {
 	margin: 0;
 	min-height: 100vh;
@@ -26,19 +33,58 @@ header {
 	background: var(--light);
 	border-bottom: 0.1px var(--accent) solid;
 }
-h1 {
-	margin: 0;
-	font-size: 3rem;
+	h1 {
+		margin: 0;
+		font-size: 3rem;
+	}
+	header p {
+		margin: 0.25rem 0 1rem;
+	}
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: var(--light);
+	border-bottom: 1px solid var(--accent);
+	margin-bottom: 1rem;
 }
-header p {
-	margin: 0.25rem 0 1rem;
-}
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	nav ul li + li {
+		border-left: 1px solid var(--accent);
+	}
+	nav ul li a {
+		display: block;
+		padding: 12px 16px;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	nav ul li a:hover,
+	nav ul li a:focus {
+		background-color: var(--accent);
+		color: var(--background);
+	}
 
 ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
+
+.skillList {
+	list-style-type: disc; 
+	padding-left: 0;
+}
+	.skillList li {
+		text-indent: -1em;
+		padding-left: 1em;      
+		list-style-position: inside;
+	}
+
 .links li {
 	display: inline-block;
 	margin: 0 0.75rem;
@@ -52,20 +98,23 @@ main {
 	padding: 0 1rem;
 	box-sizing: border-box;
 }
-section {
-	padding: 1.5rem 0;
-	border-bottom: 1px solid var(--light);
-}
-h2 {
-	margin: 0 0 0.5rem;
-	color: var(--accent);
-	font-size: 26px;
-}
-h3 {
-	margin: 0 0 0.25rem;
-	font-size: 20px;
-}
-
+	section {
+		padding: 1.5rem 0;
+		border-bottom: 1px solid var(--light);
+	}
+	h2 {
+		margin: 0 0 0.5rem;
+		color: var(--accent);
+		font-size: 26px;
+	}
+	h3 {
+		margin: 0 0 0.25rem;
+		font-size: 20px;
+	}
+	h4 {
+		margin-bottom: 0;
+	}
+	
 .item {
 	padding: 1rem;
 	background: var(--light);
@@ -73,7 +122,7 @@ h3 {
 	border-bottom: 1px solid var(--accent);
 	margin-bottom: 1rem;
 }
-	.item p {
+	.item p, .item ul, .item li {
 		margin: 0;
 		padding: 0;
 		padding-left: 5%;
@@ -87,6 +136,24 @@ h3 {
 	.item h4 {
 		padding-left: 5%;
 	}
+	.item button {
+		position: left;
+		font-family: Georgia, serif;
+		font-weight: bold;
+		background: var(--light);
+		color: var(--accent);
+	}
+		.item button a {
+			text-decoration: none;
+			margin: 10px;
+			font-size: 16px;
+		}
+		.item button:hover {
+			background-color: var(--accent);
+		}
+		.item button:hover a {
+			color: var(--background);
+		}
 
 .tags li {
 	display: inline-block;
@@ -102,16 +169,27 @@ footer {
 	background: var(--text);
 	color: var(--background);
 }
+	footer a {
+		color: var(--background);
+	}
 
-footer a {
-	color: var(--background);
-}
-
-button {
+.topButton {
 	position: fixed;
-	bottom: 0px;
-	right: 0px;
+	bottom: 3%;
+	right: 3%;
 	width: 100px;
 	display: none;
 	/*Make button look better here/in class*/
+	font-family: Georgia, serif;
+	font-weight: bold;
+	background: var(--light);
+	color: var(--accent);
+	
 }
+	.topButton h4 {
+		margin: 10px;
+	}
+	.topButton:hover {
+		background-color: var(--accent);
+		color: var(--background);
+	}
